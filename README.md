@@ -1,4 +1,6 @@
-**I built a data workflow that sorts 1,100+ SME funding applications into three funding-readiness tiers, and set out a recommended strategy for each tier to increase the number of businesses connected with investors.**
+**I built a data workflow that sorts 1,100+ SME capital funding applications into three funding-readiness tiers, and set out a recommended strategy for each tier to increase the number of businesses connected with investors.**
+
+**Optimize the SME Campaign conversion rate by connecting the most viable SME candidates to investors as early as possible.  every early completed deal builds the programme's reputation and contributes to the JSE's SME outreach success.**
 
 **Note**: The original dataset has been sanitized. Read the details by the [**About the data section**](#about-the-data)
 
@@ -127,6 +129,6 @@ The following characteristics of the original data have been deliberately preser
 - the same categories of data quality problem, including underscore-padded amounts, revenue text-bands, inconsistent province names, malformed registration numbers, free text entered into numeric fields, and missing responses;
 - realistic distributions, so that the model produces a portfolio shape comparable to the original.
 
-The pipeline, the cleaning rules, the scoring model and the dashboard are the originals and run unchanged against this data. The two PDF documents were produced during the original engagement, and the figures they quote therefore differ slightly from the tier counts above, which are reproduced from the synthetic dataset.
+The pipeline, the cleaning rules, the scoring model and the dashboard are the originals and run unchanged against this data. Both PDF documents have been regenerated against this repository's dataset, so every figure and worked example they quote matches the tier counts above and can be verified directly against the output spreadsheets.
 
 [**Back to the Top**](#summary)
