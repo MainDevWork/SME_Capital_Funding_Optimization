@@ -77,6 +77,28 @@ Three findings from this segmentation shaped the recommended strategy.
 
 Transformation credentials are strong across the applicant pool as a whole. This is commercially significant, as B-BBEE standing and inclusive ownership are precisely the criteria many investors are mandated to apply. The scoring model surfaces these businesses rather than allowing them to remain undifferentiated within a pool of a thousand applications.
 
+### The dashboard
+
+The scored output feeds a three-page Power BI report, built on the dark theme in [PowerBI_Dark_Modern_Theme.json](PowerBI_Dark_Modern_Theme.json). Each tier keeps the same colour across every page, so the views can be read together, and the tier slicer filters an entire page at once.
+
+#### Executive Summary
+
+The portfolio at a glance: KPI tiles for total SMEs, average readiness score, total capital requested and the size of the High tier, alongside the tier split, the provincial footprint by tier, and the average contribution each of the four pillars makes to the score.
+
+![Executive Summary](docs/images/executive_summary.png)
+
+#### Funding Readiness Tiers
+
+The scoring view. A tier comparison table of the fields investors ask for, B-BBEE transformation score by tier, median ask-to-revenue ratio against the 0.5–5× sweet spot, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that business.
+
+![Funding Readiness Tiers](docs/images/funding_readiness_tiers.png)
+
+#### Contextual Profile
+
+Where the applicants come from and what they look like: applications over time, distribution across 2024 revenue bands, and industry breakdown by readiness tier — the view used to decide which sectors and provinces warrant targeted development work.
+
+![Contextual Profile](docs/images/contextual_profile.png)
+
 ### Value delivered
 
 The workflow converts an unranked applicant pool into a prioritised, decision-ready portfolio. Specifically, it:
