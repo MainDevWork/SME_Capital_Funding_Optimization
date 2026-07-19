@@ -1,4 +1,4 @@
-**I built a data workflow that sorts 1,100+ SME capital funding applications into three funding-readiness tiers, and set out a recommended strategy for each tier to increase the number of businesses connected with investors.**
+**Built a data workflow that sorts 1,100+ SME capital funding applications into three funding-readiness tiers, and set out a recommended strategy for each tier to increase the number of businesses connected with investors.**
 
 **Optimize the SME Campaign conversion rate by connecting the most viable SME candidates to investors as early as possible.  every early completed deal builds the programme's reputation and contributes to the JSE's SME outreach success.**
 
