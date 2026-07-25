@@ -207,7 +207,7 @@ The pipeline, the data cleaning, the scoring model and the dashboard remain the 
 **Ndivhuwo** — data analysis, modelling and dashboard.
 
 - Email: [ndivhuwojse@gmail.com](mailto:ndivhuwojse@gmail.com)
-- LinkedIn:
+- LinkedIn: [www.linkedin.com/in/ndivhuwo-makhavhu](https://www.linkedin.com/in/ndivhuwo-makhavhu)
 - GitHub: [github.com/MainDevWork](https://github.com/MainDevWork)
 - Project: [SME_Capital_Funding_Optimization](https://github.com/MainDevWork/SME_Capital_Funding_Optimization)
 
