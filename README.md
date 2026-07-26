@@ -23,15 +23,15 @@
 | File                                                                                                                             | Description                                                           |
 | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                    |
-| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with wright-ups for each step |
+| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step |
 | [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                               |
 | [Datasets/Capital_Matching_Cleaned_Data.xlsx](Datasets/)                                                                          | The cleaned dataset                                                   |
 | [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/)                                                                         | The model data set, with every SME scored, tiered and ranked          |
 | [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                        |
-| [Data Cleaning Walkthrough (PDF)](docs/reports/01_Data_Cleaning_Walkthrough.pdf)                                                   | How the messy data was diagnosed and repaired in Python               |
-| [Business Case (PDF)](docs/reports/02_Business_Case.pdf)                                                                           | The problem, its primary/secondary/tertiary layers, and the approach  |
-| [Scoring Methodology (PDF)](docs/reports/03_Scoring_Methodology.pdf)                                                               | How each SME is scored and sorted into High / Mid / Low tiers          |
-| [Insights &amp; Recommendations (PDF)](docs/reports/04_Insights_and_Recommendations.pdf)                                           | What the dashboard reveals and the decisions each insight drives       |
+| [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                   | How the messy data was diagnosed and repaired in Python               |
+| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                           | The problem, its primary/secondary/tertiary layers, and the approach  |
+| [Scoring Methodology (PDF)](Documents/Reports/Segmentation_Scoring_Methodology.pdf)                                                               | How each SME is scored and sorted into High / Mid / Low tiers          |
+| [Insights &amp; Recommendations (PDF)](Documents/Reports/Insights_and_Recommendations.pdf)                                           | What the dashboard reveals and the decisions each insight drives       |
 | [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download       |
 
 ## Data sources and scope
@@ -52,7 +52,7 @@ Every figure in this project traces back to a single file: the export of applica
 | Scale & impact      | Existing employees, anticipated new jobs, number of shareholders |
 | Transformation      | B-BBEE level, and Black, women, youth and disability ownership   |
 
-**A word on quality and scope.** The form exported clean-looking headers but messy values: funding amounts padded with trailing underscores (`250000_________`), revenue recorded as text bands rather than numbers, provinces spelled four different ways, malformed registration numbers, free text sitting in numeric fields, duplicate submissions, and blanks in fields investors require. Roughly one field in ten arrived unusable as captured. Repairing that data — without discarding businesses for gaps the form itself created — is the first half of the work; scoring what remains is the second. The dataset published here is a sanitised stand-in for the confidential original; the [About the data](#about-the-data) section explains exactly how and why.
+**A word on quality and scope.** The form exported clean-looking headers but messy values: funding amounts padded with trailing underscores (`250000_________`), revenue recorded as text bands rather than numbers, one province recorded under two different names (`KZN` alongside `KwaZulu-Natal`), malformed registration numbers, free text sitting in numeric fields, duplicate submissions, and blanks in fields investors require. Roughly one field in ten arrived unusable as captured. Repairing that data — without discarding businesses for gaps the form itself created — is the first half of the work; scoring what remains is the second. The dataset published here is a sanitised stand-in for the confidential original; the [About the data](#about-the-data) section explains exactly how and why.
 
 ## Methodology
 
@@ -154,15 +154,15 @@ The scored output feeds a three-page Power BI report. Each tier keeps its colour
 
 **Funding Readiness (Executive Summary)** — the portfolio at a glance: KPI tiles for total SMEs (1,116), average readiness score (54.8 / 100), total funding ask (R10.30bn) and the size of the investor-ready High tier (245, 22.0%), alongside the tier split, the provincial footprint by tier, and each pillar's average contribution to the score.
 
-![Funding Readiness — Executive Summary](docs/images/executive_summary.png)
+![Funding Readiness — Executive Summary](Documents/Images/executive_summary.png)
 
 **Scoring Dashboard — High / Mid / Low investor profiles** — the scoring view: KPI tiles including total jobs anticipated (26,506), a tier comparison of the investor-relevant fields, average B-BBEE transformation score by tier, total funding ask against revenue by tier, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that bsiness.
 
-![Scoring Dashboard — Investor Profiles](docs/images/funding_readiness_tiers.png)
+![Scoring Dashboard — Investor Profiles](Documents/Images/funding_readiness_tiers.png)
 
 **Contextual Profile by Tier** — where the applicants come from and what they look like: applications over time, distribution across 2024 revenue bands, and industry and provincial breakdowns by readiness tier — the view used to decide which sectors and provinces warrant targeted development work.
 
-![Contextual Profile](docs/images/contextual_profile.png)
+![Contextual Profile](Documents/Images/contextual_profile.png)
 
 ## Recommendations
 
