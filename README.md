@@ -29,9 +29,7 @@
 | [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/)                                                                         | The model data set, with every SME scored, tiered and ranked          |
 | [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                        |
 | [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                   | How the messy data was diagnosed and repaired in Python               |
-| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                           | The problem, its primary/secondary/tertiary layers, and the approach  |
-| [Scoring Methodology (PDF)](Documents/Reports/Segmentation_Scoring_Methodology.pdf)                                                               | How each SME is scored and sorted into High / Mid / Low tiers          |
-| [Insights &amp; Recommendations (PDF)](Documents/Reports/Insights_and_Recommendations.pdf)                                           | What the dashboard reveals and the decisions each insight drives       |
+| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                           | The situation, the problem, the approach proposed, and the goal        |
 | [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download       |
 
 ## Data sources and scope
