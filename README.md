@@ -1,20 +1,20 @@
 ### Overview
 
-**The JSE's SME Capital Matching Initiative is a campaign that connects small businesses with investors so that they can be provided with capital to support their growth. In 2025, the initiative received more than 1,100 applications of SMEs that wish to recieve capital funding from investors.**
+**The JSE's SME Capital Matching Initiative is a campaign that connects small businesses with investors so that they can be provided with capital to support their growth. In 2025, the initiative received more than 1,100 applications from SMEs that wish to receive capital funding from investors.**
 
-**This number is too large for the SME Management team to review efficiantly to connect them with investors, which leads to a low conversion rate. To address this, I've built a data workflow that ingestions the SME applications, cleans the messy data, and scores and sorts each SME applicant into three tiers (High, Mid, and Low) that determine which of them are the most viable for funders to invest capital into.**
+**This number is too large for the SME Management team to review efficiently to connect them with investors, which leads to a low conversion rate. To address this, I've built a data workflow that ingests the SME applications, cleans the messy data, and scores and sorts each SME applicant into three tiers (High, Mid, and Low) that determine which of them are the most viable for funders to invest capital into.**
 
-**The goal is to increase the campaign's conversion rate by identifying the most investable SMEs and presenting them to funders first. A further goal was to provide the SME team with clear evidence to attract new investors into the initiative. Each early and successful SME - to - funder deal strengthens the reputation of the inititative and supports the JSE's wider SME outreach.**
+**The goal is to increase the campaign's conversion rate by identifying the most investable SMEs and presenting them to funders first. A further goal was to provide the SME team with clear evidence to attract new investors into the initiative. Each early and successful SME - to - funder deal strengthens the reputation of the initiative and supports the JSE's wider SME outreach.**
 
 ### What was uncovered
 
-**The workflow identified 245 SMEs in the High tier, 595 in the Mid tier, and 276 in the Low tier. The 245 High tier SMEs are the most ready to receive funding. This number is already higher than the number of SMEs the programme matched with funders in previous rounds, which was 90 in the 2023 pilot and 190 in 2024. For this reason, the High tier is where investors should begin. As a group, these SMEs altogether generated R4.05 billion in revenue while requesting R3.24 billion in capital, which means they are requesting less than they currently earn. This indicates a realistic and low risk profile. In total, they employed 5690 people, collectively project 11,436 new jobs they'll created. They hold strong B-BBEE credentials, with an average of 95% black ownership. These SMEs also applied early in the campaign. As a result, they can be presented to investors immediately.**
+**The workflow identified 245 SMEs in the High tier, 595 in the Mid tier, and 276 in the Low tier. The 245 High tier SMEs are the most ready to receive funding. This shortlist is larger than the number of SMEs the programme actually matched with funders in previous rounds, which was 90 in the 2023 pilot and 190 in 2024 — though a ready shortlist and a completed match are not the same measure. For this reason, the High tier is where investors should begin. As a group, these SMEs altogether generated R4.05 billion in revenue while requesting R3.24 billion in capital, which means they are requesting less than they currently earn. This indicates a realistic and low risk profile. In total, they employ 5,690 people and collectively project 11,436 new jobs. They hold strong B-BBEE credentials, with an average of 95% black ownership. These SMEs applied steadily throughout the campaign, in every month of the run. As a result, they can be presented to investors immediately.**
 
 ### Value delivered
 
-**The project provides the SME team with two assets. The first is a repeatable data segmentation model that ranks every future group of applicants automatically, together with a clear strategy to manage each tier. The team can fund the 245 High tier SMEs now, support the growth of the 595 Mid tier businesses, and develop the 276 Low tier applicants for future funding. The second asset is a set of evidence that the team can present to prospective investors.. In summary, the workflow converts 1,116 applications into both an internal list of priorities and an external case for investment.**
+**The project provides the SME team with two assets. The first is a repeatable data segmentation model that ranks every future group of applicants automatically, together with a clear strategy to manage each tier. The team can fund the 245 High tier SMEs now, support the growth of the 595 Mid tier businesses, and develop the 276 Low tier applicants for future funding. The second asset is a set of evidence that the team can present to prospective investors. In summary, the workflow converts 1,116 applications into both an internal list of priorities and an external case for investment.**
 
-**Note**: The original dataset has been sanitized. Read the details by the [**About the data section**](#about-the-data)
+**Note**: The original dataset has been sanitised. Read the details by the [**About the data section**](#about-the-data)
 
 ---
 
@@ -30,6 +30,7 @@
 | [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                        |
 | [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                   | How the messy data was diagnosed and repaired in Python               |
 | [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                           | The situation, the problem, the approach proposed, and the goal        |
+| [Insights & Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                                     | Segmentation findings, tier-by-tier actions, and the case for capital partners |
 | [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download       |
 
 ## Data sources and scope
@@ -39,6 +40,8 @@ Every figure in this project traces back to a single file: the export of applica
 **Where the data comes from.** Each row is one funding application, self-reported by the business through a public web form. Nothing is drawn from external registries or credit bureaus — the analysis works entirely with what the applicant chose to disclose, which is exactly the position the SME team is in when it decides who to advance.
 
 **Period and volume.** The applications span **29 May 2025 to 26 June 2026**. The raw export holds **1,186 rows**, which resolve to **1,116 unique businesses** once exact copies and re-submissions are removed.
+
+**A note on reproducibility.** The figures quoted in this README and in the insights deck come from the live application dataset, which is confidential and is not published in this repository. The notebooks are committed with a synthetic dataset of the same shape, so the code runs end to end for anyone who clones the repo — but the tier counts it produces (**273 / 568 / 275**) will not match the figures quoted here (**245 / 595 / 276**). The scoring model, pillar weights and tier thresholds are identical in both cases.
 
 **Fields captured.** The form collected **27 fields** per application. The ones that drive the analysis fall into five groups:
 
@@ -144,7 +147,7 @@ The detail behind each headline is set out below, and reproduced visually in the
 
 **4. Transformation credentials are strong across the entire pool.** Average Black ownership is **91.6%**, and every tier scores highly on the B-BBEE pillar (**15, 14 and 13 of 20** for High, Mid and Low). This is commercially significant, because B-BBEE standing and inclusive ownership are precisely the criteria many investors are required to apply. The model surfaces these businesses rather than leaving them undifferentiated in a pool of a thousand.
 
-**5. The strongest businesses applied earliest.** Overall application volume built through the campaign, but the High-tier businesses cluster in the earliest submissions — a signal that the most credible operators moved first, and a reason to work the High tier without delay.
+**5. Quality holds steady while volume swings.** Application volume rose and fell across the campaign, but the High tier held a steady **17–28%** share of every month's applications. Investor-ready businesses arrived in all fourteen months, with two thirds of them — **161 of 245** — from September 2025 onward. Matching should therefore run continuously, rather than waiting for the campaign to close.
 
 **6. Applications concentrate in three provinces.** **Gauteng, the Western Cape and Limpopo** account for the large majority of the pool, and the same three dominate the High tier. This tells the team where an in-person or targeted development effort would reach the most businesses.
 
