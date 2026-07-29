@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------------------
+# Confidential source data
+#
+# Only the sanitised, synthetic dataset belongs in this repository. The real
+# application export contains business names, named individuals, email
+# addresses, phone numbers and company registration numbers, and must never
+# be committed. The patterns below block it by name and by shape.
+# ---------------------------------------------------------------------------
+*_ORIGINAL.*
+*_original.*
+*_REAL.*
+*_CONFIDENTIAL.*
+*_PRIVATE.*
+*raw_export*
+Datasets/**/*ORIGINAL*
+Datasets/**/*CONFIDENTIAL*
+
+# Anything dropped in these folders is treated as private by default.
+Private/
+Confidential/
+Data_Private/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Office and OS temporary files
+# ---------------------------------------------------------------------------
+~$*
+*.tmp
+.~lock.*#
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# OneDrive conflict copies
+*-Conflict.*
+*conflicted copy*
+
+# ---------------------------------------------------------------------------
+# Power BI
+# ---------------------------------------------------------------------------
+*.pbix.bak
+.pbi/

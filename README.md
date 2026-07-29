@@ -1,18 +1,28 @@
+# SME Capital Funding Optimization
+
+**Turning 1,116 unreviewable funding applications into a ranked, investor-ready shortlist.**
+
+|            1,116            |             245             |          R10.30bn          |             26,506             |
+| :-------------------------: | :-------------------------: | :------------------------: | :----------------------------: |
+| SMEs scored, tiered, ranked | Investor-ready, in the High tier | Total capital requested | New jobs projected by applicants |
+
 ### Overview
 
-**The JSE's SME Capital Matching Initiative is a campaign that connects small businesses with investors so that they can be provided with capital to support their growth. In 2025, the initiative received more than 1,100 applications from SMEs that wish to receive capital funding from investors.**
+The JSE's SME Capital Matching Initiative is a campaign that connects small businesses with investors so that they can be provided with capital to support their growth. In 2025, the initiative received more than 1,100 applications from SMEs that wish to receive capital funding from investors.
 
-**This number is too large for the SME Management team to review efficiently to connect them with investors, which leads to a low conversion rate. To address this, I've built a data workflow that ingests the SME applications, cleans the messy data, and scores and sorts each SME applicant into three tiers (High, Mid, and Low) that determine which of them are the most viable for funders to invest capital into.**
+This number is too large for the SME Management team to review efficiently to connect them with investors, which leads to a low conversion rate. To address this, I've built a data workflow that ingests the SME applications, cleans the messy data, and scores and sorts each SME applicant into three tiers (**High**, **Mid** and **Low**) that determine which of them are the most viable for funders to invest capital into.
 
-**The goal is to increase the campaign's conversion rate by identifying the most investable SMEs and presenting them to funders first. A further goal was to provide the SME team with clear evidence to attract new investors into the initiative. Each early and successful SME - to - funder deal strengthens the reputation of the initiative and supports the JSE's wider SME outreach.**
+The goal is to increase the campaign's conversion rate by identifying the most investable SMEs and presenting them to funders first. A further goal was to provide the SME team with clear evidence to attract new investors into the initiative. Each early and successful SME-to-funder deal strengthens the reputation of the initiative and supports the JSE's wider SME outreach.
 
 ### What was uncovered
 
-**The workflow identified 245 SMEs in the High tier, 595 in the Mid tier, and 276 in the Low tier. The 245 High tier SMEs are the most ready to receive funding. This shortlist is larger than the number of SMEs the programme actually matched with funders in previous rounds, which was 90 in the 2023 pilot and 190 in 2024 — though a ready shortlist and a completed match are not the same measure. For this reason, the High tier is where investors should begin. As a group, these SMEs altogether generated R4.05 billion in revenue while requesting R3.24 billion in capital, which means they are requesting less than they currently earn. This indicates a realistic and low risk profile. In total, they employ 5,690 people and collectively project 11,436 new jobs. They hold strong B-BBEE credentials, with an average of 95% black ownership. These SMEs applied steadily throughout the campaign, in every month of the run. As a result, they can be presented to investors immediately.**
+The workflow identified **245 SMEs in the High tier, 595 in the Mid tier and 276 in the Low tier**. The 245 High tier SMEs are the most ready to receive funding. This shortlist is larger than the number of SMEs the programme actually matched with funders in previous rounds, which was 90 in the 2023 pilot and 190 in 2024, though a ready shortlist and a completed match are not the same measure. For this reason, the High tier is where investors should begin.
+
+As a group, these SMEs altogether generated **R4.05 billion in revenue while requesting R3.24 billion in capital**, which means they are requesting less than they currently earn. This indicates a realistic and low risk profile. In total, they employ 5,690 people and collectively project 11,436 new jobs. They hold strong B-BBEE credentials, with an average of 95% Black ownership. These SMEs applied steadily throughout the campaign, in every month of the run. As a result, they can be presented to investors immediately.
 
 ### Value delivered
 
-**The project provides the SME team with two assets. The first is a repeatable data segmentation model that ranks every future group of applicants automatically, together with a clear strategy to manage each tier. The team can fund the 245 High tier SMEs now, support the growth of the 595 Mid tier businesses, and develop the 276 Low tier applicants for future funding. The second asset is a set of evidence that the team can present to prospective investors. In summary, the workflow converts 1,116 applications into both an internal list of priorities and an external case for investment.**
+The project provides the SME team with two assets. The first is a repeatable segmentation model that ranks every future group of applicants automatically, together with a clear strategy to manage each tier: fund the 245 High tier SMEs now, support the growth of the 595 Mid tier businesses, and develop the 276 Low tier applicants for future rounds. The second asset is a body of evidence the team can present to prospective investors. In summary, the workflow converts 1,116 applications into both an internal list of priorities and an external case for investment.
 
 **Note**: The original dataset has been sanitised. Read the details by the [**About the data section**](#about-the-data)
 
@@ -24,9 +34,10 @@
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download                |
 | [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                                 |
-| [Insights &amp; Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                              | Segmentation findings, tier-by-tier actions, and the case for capital partners |
+| [**Insights &amp; Actionable Decisions (PDF)**](Documents/Reports/Insights_&_Actionable_Decisions.pdf)                            | **Start here.** Segmentation findings, tier-by-tier actions, and the case for capital partners. Opens in the browser |
 | [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                        | Why the initiative needed a readiness assessment, what I built, and what it produced |
 | [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                | How the messy data was diagnosed and repaired in Python                        |
+| [Insights &amp; Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                              | The same deck as an editable PowerPoint file                                   |
 | [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step           |
 | [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                                        |
 | [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                             |
@@ -157,7 +168,7 @@ The scored output feeds a three-page Power BI report. Each tier keeps its colour
 
 ![Funding Readiness — Executive Summary](Documents/Images/executive_summary.png)
 
-**Scoring Dashboard — High / Mid / Low investor profiles** — the scoring view: KPI tiles including total jobs anticipated (26,506), a tier comparison of the investor-relevant fields, average B-BBEE transformation score by tier, total funding ask against revenue by tier, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that bsiness.
+**Scoring Dashboard — High / Mid / Low investor profiles** — the scoring view: KPI tiles including total jobs anticipated (26,506), a tier comparison of the investor-relevant fields, average B-BBEE transformation score by tier, total funding ask against revenue by tier, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that business.
 
 ![Scoring Dashboard — Investor Profiles](Documents/Images/funding_readiness_tiers.png)
 
@@ -196,16 +207,16 @@ The model is deliberately transparent, which means its assumptions should be rea
 
 ### About the data
 
-**The dataset in this repository is synthetic,** but the data work flow that was used on the original data set has remained the same. The original data set were comprised of applications that contained real business names, named individuals, email addresses, telephone numbers and company registration numbers, and therefore cannot be published. Every identifying value has been replaced with a fictitious equivalent.
+**The dataset in this repository is synthetic,** but the data workflow that was used on the original dataset has remained the same. The original dataset comprised applications that contained real business names, named individuals, email addresses, telephone numbers and company registration numbers, and therefore cannot be published. Every identifying value has been replaced with a fictitious equivalent.
 
 The following characteristics of the original data have been deliberately preserved, because they are precisely what the workflow exists to address:
 
 - The original 27 column headers
 - The same row count and duplicate structure (1,186 rows resolving to 1,116 unique businesses)
 - The same categories of data-quality problem
-- Similiar distribution of funding rediness tiers, so the model produces a portfolio shape comparable to the original.
+- Similar distribution of funding readiness tiers, so the model produces a portfolio shape comparable to the original.
 
-The pipeline, the data cleaning, the scoring model and the dashboard remain the same and run unchanged against this data. **The dashboard screenshots and the headline figures in this README reflect the original dataset** (I paidcareful attention that no confidentail details were exposed). Re-running the published notebooks on the synthetic data reproduces the same workflow and a comparable portfolio shape, but the exact tier counts and totals will differ slightly from the confidential figures shown here, by design.
+The pipeline, the data cleaning, the scoring model and the dashboard remain the same and run unchanged against this data. **The dashboard screenshots and the headline figures in this README reflect the original dataset** (I paid careful attention that no confidential details were exposed). Re-running the published notebooks on the synthetic data reproduces the same workflow and a comparable portfolio shape, but the exact tier counts and totals will differ slightly from the confidential figures shown here, by design.
 
 ## Author and contact
 
