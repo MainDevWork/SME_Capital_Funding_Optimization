@@ -2,8 +2,8 @@
 
 **Turning 1,116 unreviewable funding applications into a ranked, investor-ready shortlist.**
 
-|            1,116            |             245             |          R10.30bn          |             26,506             |
-| :-------------------------: | :-------------------------: | :------------------------: | :----------------------------: |
+|            1,116            |               245               |        R10.30bn        |              26,506              |
+| :-------------------------: | :------------------------------: | :---------------------: | :------------------------------: |
 | SMEs scored, tiered, ranked | Investor-ready, in the High tier | Total capital requested | New jobs projected by applicants |
 
 ### Overview
@@ -30,19 +30,19 @@ The project provides the SME team with two assets. The first is a repeatable seg
 
 ## Project Artifacts
 
-| File                                                                                                                             | Description                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download                |
-| [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                                 |
-| [**Insights &amp; Actionable Decisions (PDF)**](Documents/Reports/Insights_&_Actionable_Decisions.pdf)                            | **Start here.** Segmentation findings, tier-by-tier actions, and the case for capital partners. Opens in the browser |
-| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                        | Why the initiative needed a readiness assessment, what I built, and what it produced |
-| [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                | How the messy data was diagnosed and repaired in Python                        |
-| [Insights &amp; Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                              | The same deck as an editable PowerPoint file                                   |
-| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step           |
-| [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                                        |
-| [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                             |
-| [Datasets/Capital_Matching_Cleaned_Data.xlsx](Datasets/Capital_Matching_Cleaned_Data.xlsx)                                        | The cleaned dataset                                                            |
-| [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/Funding_Readiness_Segmentation.xlsx)                                      | The model data set, with every SME scored, tiered and ranked                   |
+| File                                                                                                                             | Description                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download                                      |
+| [**Insights &amp; Actionable Decisions (PDF)**](Documents/Reports/Insights_&_Actionable_Decisions.pdf)                      | Segmentation findings, tier-by-tier actions, and the case for capital partners. Opens in the browser |
+| [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                                                       |
+| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                        | Why the initiative needed a readiness assessment, what I built, and what it produced                 |
+| [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                | How the messy data was diagnosed and repaired in Python                                              |
+| [Insights &amp; Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                              | The same deck as an editable PowerPoint file                                                         |
+| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step                                 |
+| [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                                                              |
+| [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                                                   |
+| [Datasets/Capital_Matching_Cleaned_Data.xlsx](Datasets/Capital_Matching_Cleaned_Data.xlsx)                                        | The cleaned dataset                                                                                  |
+| [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/Funding_Readiness_Segmentation.xlsx)                                      | The model data set, with every SME scored, tiered and ranked                                         |
 
 ## Data sources and scope
 
