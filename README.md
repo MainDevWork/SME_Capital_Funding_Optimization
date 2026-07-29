@@ -20,18 +20,18 @@
 
 ## Project Artifacts
 
-| File                                                                                                                             | Description                                                           |
-| -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                    |
-| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step |
-| [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                               |
-| [Datasets/Capital_Matching_Cleaned_Data.xlsx](Datasets/)                                                                          | The cleaned dataset                                                   |
-| [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/)                                                                         | The model data set, with every SME scored, tiered and ranked          |
-| [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                        |
-| [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                   | How the messy data was diagnosed and repaired in Python               |
-| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                           | The situation, the problem, the approach proposed, and the goal        |
-| [Insights & Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                                     | Segmentation findings, tier-by-tier actions, and the case for capital partners |
-| [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download       |
+| File                                                                                                                             | Description                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [Download the entire project (.zip)](https://github.com/MainDevWork/SME_Capital_Funding_Optimization/archive/refs/heads/main.zip) | Every file in this repository, bundled as a single ZIP download                |
+| [SME_Capital_Matching_Dashboard.pbix](SME_Capital_Matching_Dashboard.pbix)                                                        | Power BI dashboard built on the segmented data                                 |
+| [Insights &amp; Actionable Decisions (PPTX)](Documents/Reports/Insights_&_Actionable_Decisions.pptx)                              | Segmentation findings, tier-by-tier actions, and the case for capital partners |
+| [Business Case (PDF)](Documents/Reports/Business_Case.pdf)                                                                        | Why the initiative needed a readiness assessment, what I built, and what it produced |
+| [Data Cleaning Walkthrough (PDF)](Documents/Reports/Data_Cleaning_Walkthrough.pdf)                                                | How the messy data was diagnosed and repaired in Python                        |
+| [Python_Notebooks/Data_Cleaning.ipynb](Python_Notebooks/Data_Cleaning.ipynb)                                                      | The data cleaning workflow, documented with write-ups for each step           |
+| [Python_Notebooks/Funding_Readiness_Segmentation.ipynb](Python_Notebooks/Funding_Readiness_Segmentation.ipynb)                    | The scoring model and tier segmentation                                        |
+| [Datasets/capital_matching_applications.csv](Datasets/capital_matching_applications.csv)                                          | The raw, messy (synthetic) dataset                                             |
+| [Datasets/Capital_Matching_Cleaned_Data.xlsx](Datasets/Capital_Matching_Cleaned_Data.xlsx)                                        | The cleaned dataset                                                            |
+| [Datasets/Funding_Readiness_Segmentation.xlsx](Datasets/Funding_Readiness_Segmentation.xlsx)                                      | The model data set, with every SME scored, tiered and ranked                   |
 
 ## Data sources and scope
 
