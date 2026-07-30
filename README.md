@@ -24,6 +24,22 @@ As a group, these SMEs altogether generated **R4.05 billion in revenue while req
 
 The project provides the SME team with two assets. The first is a repeatable segmentation model that ranks every future group of applicants automatically, together with a clear strategy to manage each tier: fund the 245 High tier SMEs now, support the growth of the 595 Mid tier businesses, and develop the 276 Low tier applicants for future rounds. The second asset is a body of evidence the team can present to prospective investors. In summary, the workflow converts 1,116 applications into both an internal list of priorities and an external case for investment.
 
+## What the dashboards report
+
+The scored output feeds a three-page Power BI report. Each tier keeps its colour across every page, and the tier slicer filters a whole page at once.
+
+![Funding Readiness — Executive Summary](Documents/Images/executive_summary.png)
+
+**Funding Readiness (Executive Summary)** — the portfolio at a glance: KPI tiles for total SMEs (1,116), average readiness score (54.8 / 100), total funding ask (R10.30bn) and the size of the investor-ready High tier (245, 22.0%), alongside the tier split, the provincial footprint by tier, and each pillar's average contribution to the score.
+
+![Scoring Dashboard — Investor Profiles](Documents/Images/funding_readiness_tiers.png)
+
+**Scoring Dashboard — High / Mid / Low investor profiles** — the scoring view: KPI tiles including total jobs anticipated (26,506), a tier comparison of the investor-relevant fields, average B-BBEE transformation score by tier, total funding ask against revenue by tier, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that business.
+
+![Contextual Profile](Documents/Images/contextual_profile.png)
+
+**Contextual Profile by Tier** — where the applicants come from and what they look like: applications over time, distribution across 2024 revenue bands, and industry and provincial breakdowns by readiness tier — the view used to decide which sectors and provinces warrant targeted development work.
+
 **Note**: The original dataset has been sanitised. Read the details by the [**About the data section**](#about-the-data)
 
 ---
@@ -133,9 +149,7 @@ Every business is also given a rank where 1 = most ready, with ties settled alph
 | **Jupyter Notebook**       | The documented, reproducible workflow for both stages   |
 | **Microsoft Excel**        | The hand-off format the SME team already works in       |
 | **Power BI**               | The three-page reporting layer built on the scored data |
-| **Git / GitHub**           | Version control and publication of the project          |
-
-The reporting layer uses a custom dark theme, [PowerBI_Dark_Modern_Theme.json](PowerBI_Dark_Modern_Theme.json), so each tier keeps the same colour on every page and the views can be read together.
+| **Git / GitHub**           | Version control and publication of the project<br />    |
 
 ## Key findings
 
@@ -161,20 +175,6 @@ The detail behind each headline is set out below, and reproduced visually in the
 **5. Quality holds steady while volume swings.** Application volume rose and fell across the campaign, but the High tier held a steady **17–28%** share of every month's applications. Investor-ready businesses arrived in all fourteen months, with two thirds of them — **161 of 245** — from September 2025 onward. Matching should therefore run continuously, rather than waiting for the campaign to close.
 
 **6. Applications concentrate in three provinces.** **Gauteng, the Western Cape and Limpopo** account for the large majority of the pool, and the same three dominate the High tier. This tells the team where an in-person or targeted development effort would reach the most businesses.
-
-The scored output feeds a three-page Power BI report. Each tier keeps its colour across every page, and the tier slicer filters a whole page at once.
-
-**Funding Readiness (Executive Summary)** — the portfolio at a glance: KPI tiles for total SMEs (1,116), average readiness score (54.8 / 100), total funding ask (R10.30bn) and the size of the investor-ready High tier (245, 22.0%), alongside the tier split, the provincial footprint by tier, and each pillar's average contribution to the score.
-
-![Funding Readiness — Executive Summary](Documents/Images/executive_summary.png)
-
-**Scoring Dashboard — High / Mid / Low investor profiles** — the scoring view: KPI tiles including total jobs anticipated (26,506), a tier comparison of the investor-relevant fields, average B-BBEE transformation score by tier, total funding ask against revenue by tier, employees and anticipated jobs by tier, and a searchable SME list where clicking a row filters the page to that business.
-
-![Scoring Dashboard — Investor Profiles](Documents/Images/funding_readiness_tiers.png)
-
-**Contextual Profile by Tier** — where the applicants come from and what they look like: applications over time, distribution across 2024 revenue bands, and industry and provincial breakdowns by readiness tier — the view used to decide which sectors and provinces warrant targeted development work.
-
-![Contextual Profile](Documents/Images/contextual_profile.png)
 
 ## Recommendations
 
