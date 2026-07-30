@@ -1,5 +1,3 @@
-# SME Capital Funding Optimization
-
 **Turning 1,116 unreviewable funding applications into a ranked, investor-ready shortlist.**
 
 |            1,116            |               245               |        R10.30bn        |              26,506              |
