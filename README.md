@@ -1,14 +1,23 @@
 # SME Capital Funding Optimization
 
-**Sorting 1,116 funding applications into a ranked shortlist of the businesses an investor can fund today.**
+**I turned an unusable pile of 1,186 funding applications into a ranked shortlist of 245 businesses an investor can fund today.**
 
-The Johannesburg Stock Exchange runs a campaign called the SME Capital Matching Initiative, which introduces small and medium-sized businesses to investors who can provide them with capital to grow. In 2025 the campaign received more than 1,100 applications, which is far more than the team behind it can read one by one, so applications from businesses that were ready for funding went unseen.
+The Johannesburg Stock Exchange runs the SME Capital Matching Initiative, which introduces small and medium-sized businesses to investors who can provide them with capital to grow. The 2025 intake took more than 1,100 applications, far more than the team could read one by one, and the export they arrived in was barely usable: of 1,186 submissions, 10 carried a readable funding amount and not one carried a usable revenue figure. Businesses that were ready for funding were going unseen.
 
-This project corrects the errors in the submitted information and scores every application out of 100, using only what the applicant disclosed on the form. That number is the Funding Readiness Score. That score places each business into one of three groups, called tiers. **High** means the business can be taken to an investor exactly as it stands. **Mid** means it is a real trading business with specific gaps that can be closed. **Low** means the application needs work before anyone should see it. The team therefore works from a ranked list instead of an unsorted set of applications, and each early match strengthens the case for bringing further investors into the campaign.
+### What Changed
+
+| | Before | After |
+| --- | --- | --- |
+| Applications with a readable funding amount | 10 of 1,186 | **1,109** |
+| Applications with a usable 2025 revenue figure | none | **1,112** |
+| How the team worked the pool | read by hand, in the order submitted | **1,116 businesses scored, tiered and ranked on demand** |
+| Businesses ready to put in front of an investor | no shortlist existed | **245, presentable as they stand** |
+
+This project repairs the submitted information and scores every application out of 100, using only what the applicant disclosed on the form. That number is the Funding Readiness Score, and it places each business into one of three tiers. **High** means the business can be taken to an investor exactly as it stands. **Mid** means it is a real trading business with specific gaps that can be closed. **Low** means the application needs work before anyone should see it. The team therefore works from a ranked list instead of an unsorted set of applications, and each early match strengthens the case for bringing further investors into the campaign.
 
 Scoring the full pool placed **245 businesses in the High tier, 595 in the Mid tier and 276 in the Low tier**. The 245 in the High tier are, as a group, asking for less capital than they already earn, which is the clearest evidence available that a request is realistic.
 
-### The Outcome
+### The Pool at a Glance
 
 |            1,116            |                245                |        R10.30bn        |              26,506              |
 | :--------------------------: | :--------------------------------: | :---------------------: | :------------------------------: |
@@ -58,7 +67,7 @@ Every figure in this project comes from a single file, which is the export of ap
 
 **What one row represents.** Each row is one funding application, filled in by the business itself through a public web form. No information was taken from credit bureaus or company registries, so the analysis uses only what the applicant chose to disclose, which is precisely the position the team is in when it decides who to put forward.
 
-**Period and volume.** The applications run from **29 May 2025 to 26 June 2026**. The export holds **1,186 rows**, which resolve to **1,116 separate businesses** once duplicate and repeated submissions are removed.
+**Period and volume.** The intake runs from **29 May 2025 to 26 June 2026**, fourteen months in all. The export holds **1,186 rows**, which resolve to **1,116 separate businesses** once duplicate and repeated submissions are removed.
 
 **What the form collected.** The form captured **27 fields** per application. The ones that drive the analysis fall into five groups.
 
@@ -212,9 +221,9 @@ The cleaning, the scoring model and the dashboard all run unchanged against this
 
 ## Author and Contact
 
-**Ndivhuwo**, data analysis, modelling and dashboard.
+**Ndivhuwo Makhavhu** — data analyst. Data cleaning, the scoring model, the Power BI report and the written analysis.
 
-- Email: [ndivhuwojse@gmail.com](mailto:ndivhuwojse@gmail.com)
+- Email: [ndivhumakhavhu@gmail.com](mailto:ndivhumakhavhu@gmail.com)
 - LinkedIn: [www.linkedin.com/in/ndivhuwo-makhavhu](https://www.linkedin.com/in/ndivhuwo-makhavhu)
 - GitHub: [github.com/MainDevWork](https://github.com/MainDevWork)
 - Project: [SME_Capital_Funding_Optimization](https://github.com/MainDevWork/SME_Capital_Funding_Optimization)
