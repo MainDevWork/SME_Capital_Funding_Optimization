@@ -221,7 +221,7 @@ The cleaning, the scoring model and the dashboard all run unchanged against this
 
 ## Author and Contact
 
-**Ndivhuwo Makhavhu** — data analyst. Data cleaning, the scoring model, the Power BI report and the written analysis.
+**Ndivhuwo Makhavhu**, data analyst. Data cleaning, the scoring model, the Power BI report and the written analysis.
 
 - Email: [ndivhumakhavhu@gmail.com](mailto:ndivhumakhavhu@gmail.com)
 - LinkedIn: [www.linkedin.com/in/ndivhuwo-makhavhu](https://www.linkedin.com/in/ndivhuwo-makhavhu)
